@@ -1,0 +1,22 @@
+<html lang="en-US">
+<head>
+	<title>jQuery Load Screen</title>
+	<meta charset="UTF-8">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.jlib.js"></script>
+		<script type="text/javascript" src="jquery.popup.js"></script>
+		<script type="text/javascript" src="jquery.loadscreen.js"></script>
+		<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+	<button class="create">+</button>
+	<script type="text/javascript">
+		$(function() {
+			$("body").loadscreen();
+			$("body").on("click",".create",function() {
+				$("body").loadscreen("start");
+			});
+		});
+	</script>
+</body>
+</html>
